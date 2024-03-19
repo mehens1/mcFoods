@@ -13,6 +13,33 @@ class WebpageController extends Controller
             'page' => 'Home'
         ];
 
-        return view('webpage', compact('data'));
+        return view('home', compact('data'));
+    }
+
+    public function login()
+    {
+        $data = [
+            'page' => 'Login'
+        ];
+
+        return view('login', compact('data'));
+    }
+
+    public function register()
+    {
+        $data = [
+            'page' => 'Register'
+        ];
+
+        return view('register', compact('data'));
+    }
+
+    public function forgotPassword()
+    {
+        $data = [
+            'page' => 'Forgot Password'
+        ];
+
+        return view('forgotPassword', compact('data'));
     }
 }
